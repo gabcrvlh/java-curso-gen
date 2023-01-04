@@ -26,7 +26,6 @@ public class TestaCliente {
         System.out.println("Pontos acumulados de fidelidade: " + cliente1.getFidelidade());
 
 
-
         cliente1.comprar(10.0);
         cliente1.usarFidelidade(1);
 
@@ -35,6 +34,5 @@ public class TestaCliente {
         cliente2.comprar(20.0);
         cliente2.comprar(40.0);
         cliente2.usarFidelidade(3);
-
     }
 }
