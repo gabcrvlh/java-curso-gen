@@ -31,9 +31,9 @@ public class TestaPaciente {
         System.out.println(" ");
         modalidade();
 
-        paciente1.agendarConsulta(04, 01, 2023);
+        paciente1.agendarConsulta(4, 1, 2023);
 
-        paciente2.agendarConsulta(10, 02, 2023);
+        paciente2.agendarConsulta(10, 2, 2023);
 
     }
 

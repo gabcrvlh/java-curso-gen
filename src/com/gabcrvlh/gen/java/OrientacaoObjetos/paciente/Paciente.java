@@ -79,26 +79,24 @@ public class Paciente {
     public void agendarConsulta(int dia, int mes, int ano) {
         System.out.println("\n\n***Agendamento***");
         switch (planoDeSaude) {
-            case 0:
+            case 0 -> {
                 System.out.println("Paciente: " + getNome());
                 System.out.println("Modalidade: Particular");
                 System.out.println("Data agendada: " + dia + "/" + mes + "/" + ano);
                 System.out.println("Valor: 100,00");
-                break;
-
-            case 1:
+            }
+            case 1 -> {
                 System.out.println("Paciente: " + getNome());
                 System.out.println("Modalidade: MDC");
                 System.out.println("Data agendada: " + dia + "/" + mes + "/" + ano);
                 System.out.println("Valor: 20,00");
-                break;
-
-            case 2:
+            }
+            case 2 -> {
                 System.out.println("Paciente: " + getNome());
                 System.out.println("Modalidade: Santé");
                 System.out.println("Data agendada: " + dia + "/" + mes + "/" + ano);
                 System.out.println("Valor: 0,00");
-                break;
+            }
         }
     }
 
