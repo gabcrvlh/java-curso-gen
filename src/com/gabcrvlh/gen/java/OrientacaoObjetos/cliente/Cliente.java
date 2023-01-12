@@ -2,21 +2,18 @@ package com.gabcrvlh.gen.java.OrientacaoObjetos.cliente;
 
 public class Cliente {
     private String nome;
-    private String cpf;
     private String celular;
     private String email;
     private int idCliente;
     private int fidelidade = 0;
 
     public Cliente(String nome,
-                   String cpf,
                    String celular,
                    String email,
                    int idCliente,
                    int fidelidade) {
 
         this.nome = nome;
-        this.cpf = cpf;
         this.celular = celular;
         this.email = email;
         this.idCliente = idCliente;
@@ -27,10 +24,6 @@ public class Cliente {
 
     public String getNome() {
         return nome;
-    }
-
-    public String getCpf() {
-        return cpf;
     }
 
     public String getCelular() {
@@ -51,10 +44,6 @@ public class Cliente {
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
     }
 
     public void setCelular(String celular) {
@@ -104,4 +93,12 @@ public class Cliente {
         }
     }
 
+
+    public void visualizar(){
+        System.out.println("\nNome: " + getNome() +
+                "\nCelular: " + getCelular() +
+                "\nEmail: " + getEmail() +
+                "\nID do Cliente: " + getIdCliente() +
+                "\nPontos de Fidelidade: " + getFidelidade());
+    }
 }
